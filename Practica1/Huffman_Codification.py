@@ -183,13 +183,19 @@ print()
 print('Codificación en inglés: ' + code_X_eng)
 print('Longitud del código en inglés: ' + str(len(code_X_eng)))
 print('Longitud de la codificación usual: ' + str(len_code_X_bin_eng))
-print('Mejora: ' + str((len_code_X_bin_eng / len(code_X_eng) - 1)*100) + ' %')
+if len(code_X_eng) < len_code_X_bin_eng:
+    print("La codificación de Huffman en Seng es más eficiente que la usual")
+else:
+    print("La codificación de Huffman en Seng no es más eficiente que la usual")
 print()
 
 print('Codificación en español: ' + code_X_esp)
 print('Longitud del código en español: ' + str(len(code_X_esp)))
 print('Longitud de la codificación usual: ' + str(len_code_X_bin_esp))
-print('Mejora: ' + str((len_code_X_bin_esp / len(code_X_esp) - 1)*100) + ' %')
+if len(code_X_esp) < len_code_X_bin_esp:
+    print("La codificación de Huffman en Sesp es más eficiente que la usual")
+else:
+    print("La codificación de Huffman en Sesp no es más eficiente que la usual")
 print()
 print()
 
