@@ -99,7 +99,7 @@ plt.show()
 
 # Definimos la siguiente función para abstraer el procedimiento realizado y para
 # no tener copiar código con distintas distancias.
-def clustering_DBSCAN(n0, eps_values, distance) -> tuple[list, list]:
+def clustering_DBSCAN(n0, eps_values, distance):
     """
     Función que dado una lista de valores posibles de épsilon realiza los 
     siguientes pasos:
